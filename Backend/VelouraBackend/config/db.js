@@ -1,0 +1,15 @@
+const cloudinary = require('cloudinary').v2;
+const dotenv = require('dotenv');
+dotenv.config();
+
+console.log("DEBUG: Cloud Name ->", process.env.CLOUD_NAME);
+console.log("DEBUG: API Key ->", process.env.API_KEY);
+console.log("DEBUG: Secret Length ->", process.env.API_SECRET ? process.env.API_SECRET.length : 0);
+
+cloudinary.config({
+  cloud_name: process.env.CLOUD_NAME,
+  api_key: process.env.API_KEY,
+  api_secret: process.env.API_SECRET,
+  secure: true 
+});
+module.exports = cloudinary;
