@@ -15,7 +15,7 @@ const ReturnReceivedOrder  = require("../models/ReturnReceived");
 const RefundReturnOrder = require("../models/RefundReturn");
 const RejectedPendingOrder = require("../models/RejectedPending");
 
-const {refundRejectedOrderPaymentMail} = require("../utils/refundrejectedorderpaymentmail");
+const {refundRejectedOrderPaymentMail} = require("../utils/Refundrejectedorderpaymentmail");
 const { sendOrderConfirmationEmail } = require("../utils/SendConfirmOrder");
 const {orderInTransitMail} = require("../utils/Orderintransitmail");
 const {orderAcceptedMail} = require("../utils/Orderacceptedmail");
