@@ -78,7 +78,7 @@ const VelouraProductDetails = () => {
     }
 
     localStorage.setItem("veloura_cart", JSON.stringify(cart));
-    showNotification("Added to Atelier Bag");
+    showNotification("Added to Atelier Cart");
   };
 
   const handleAddToWishlist = () => {
@@ -261,7 +261,7 @@ const VelouraProductDetails = () => {
                 ${product.stock > 0 ? "bg-[#1A2533] text-white hover:bg-[#7A8DAE]" : "bg-zinc-200 text-zinc-500 cursor-not-allowed"}`}
               >
                 <ShoppingBag size={16} />{" "}
-                {product.stock > 0 ? "Add to Atelier Bag" : "Out of Stock"}
+                {product.stock > 0 ? "Add to Atelier Cart" : "Out of Stock"}
               </button>
               <button
                 onClick={handleAddToWishlist}
