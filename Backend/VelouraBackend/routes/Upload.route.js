@@ -9,7 +9,7 @@ const {
   updateProduct,
   getAllProductStore,
 } = require("../controllers/Product.controller");
-const { protect, adminOnly } = require("../middleware/authMiddleware.js");
+const { protect, adminOnly } = require("../middleware/authmiddleware.js");
 
 
 router.get("/getallproducts", getAllProductStore);

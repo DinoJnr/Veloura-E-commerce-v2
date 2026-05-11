@@ -12,7 +12,7 @@ const {
   deleteLogistics,
 } = require("../controllers/AdminsettingsController");
 
-const { protect, adminOnly } = require("../middleware/authMiddleware.js");
+const { protect, adminOnly } = require("../middleware/authmiddleware.js");
 
 
 router.use(protect, adminOnly);

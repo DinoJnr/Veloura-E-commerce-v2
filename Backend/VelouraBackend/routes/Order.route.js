@@ -1,6 +1,6 @@
 const express = require("express");
 const router  = express.Router();
-const { protect, adminOnly } = require("../middleware/authMiddleware.js");
+const { protect, adminOnly } = require("../middleware/authmiddleware.js");
 
 const {
   checkoutPayment,
